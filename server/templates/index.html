@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger Logs</title>
+    <style>
+        .screenshot-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .screenshot-container img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keystrokes</h1>
+    <ul>
+        {% for keystroke in keystrokes %}
+        <li>{{ keystroke }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Screenshots</h1>
+    <div>
+        {% for screenshot in screenshots %}
+        <div class="screenshot-container">
+            <img src="{{ url_for('static', filename=screenshot.filename) }}" alt="Screenshot" width="500">
+            <p>Timestamp: {{ screenshot.timestamp }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
