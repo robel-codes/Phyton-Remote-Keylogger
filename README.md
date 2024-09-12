@@ -39,17 +39,16 @@ pip install nuitka
 - **Capture Screenshots**: Uses `mss` to take screenshots at regular intervals.
 - **Send Data**: Sends keystrokes and screenshots to the Flask server using `requests`.
 
+## Replit Configuration
+- **Create Replit Account**: Sign up at [Replit](https://replit.com).
+- **New Project**: Create a new Python project.
+- **Add Flask Code**: Implement the Flask server code and create `index.html` in the `templates` folder.
+
 ### Flask Server
 - **Install Flask**: Install Flask on your remote server ```pip install Flask```
 - **Setup Server**: Handles incoming POST requests at `/keystrokes` and `/screenshots`.
 - **Data Storage**: Saves received screenshots in the `static` folder and displays them on the `index.html` page.
 - **Display Data**: Shows captured keystrokes and screenshots with timestamps.
-
-## Replit Configuration
-- **Create Replit Account**: Sign up at [Replit](https://replit.com).
-- **New Project**: Create a new Python project.
-- **Add Flask Code**: Implement the Flask server code and create `index.html` in the `templates` folder.
-- 
 
 
 ## Usage
@@ -69,9 +68,9 @@ This project is for educational purposes only. Use responsibly and ensure compli
 
 ## Resources
 - [David Bombal Youtube](https://www.youtube.com/watch?v=LBM3EzBXhdY)
-- **Replit**: For providing a platform to host the Flask server.
-- **Python Libraries**: For their contributions to the development of the keylogger and server.
-- **Nuitka Documentation**: For guidance in setting up the web server.
+- **Replit**: For platform to host the Flask server.
+- **Python Libraries**
+- **Nuitka Documentation**
 
 
 
